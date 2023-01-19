@@ -24,8 +24,15 @@
                 <textarea name="Message" placeholder="Message" required></textarea>
                 <input type="hidden" name="_next" value="https://mayenr.github.io/zoey-final/Zoey%20Cafe%20Contact%20Page.html">
                 <br><br>
-                <button type="submit">Send</button>
+                <button type="submit" id="button" onclick="alert ('Thank you. Your form was successfully submitted.')">Send</button>
         </form>
     </div>
+
+    <script>
+        function thankyou() {
+            alert ('Thank you. Your form was successfully submitted.');
+        }
+        document.getElementById("button").onclick = thankyou;
+    </script>
 </body>
 </html>
